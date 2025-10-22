@@ -1,18 +1,20 @@
 import Link from "next/link";
 import cardData from "./card-data.json"
-import "./cards.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-export default function Home() {
+
+export default function About() {
   return (
     <>
     <section className="header-container">
-      <header>hello. <br />I'm wall03</header>
-      <i className="fa-solid fa-hand-wave"></i>
+      <h1>hello. <br />I'm wall03</h1>
     </section>
-
+    <section className="full-size-container">
+        <h2>biography</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+    </section>
     <section className="small-card-container">
       <Cards />
      

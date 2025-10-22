@@ -1,0 +1,18 @@
+[
+    {
+        "title": "I'm a web developer",
+        "link": "/projects"
+    },
+    {
+        "title": "my website portfolio",
+        "link": "/portfolio"
+    },
+    {
+        "title": "who am i?",
+        "link": "/about"
+    },
+    {
+        "title": "my stream of consciousness",
+        "link": "/blog"
+    }
+]

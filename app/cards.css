@@ -1,0 +1,22 @@
+.small-card-container {
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  flex-wrap:wrap;
+  background:none;
+  padding:0;
+}
+
+.small-card {
+  background-color:var(--bg-accent);
+  padding:25px;
+  border-radius:20px;
+  margin:none;
+  width:570px;
+}
+
+
+.small-card h2 {
+    margin:0;
+    font-size:1.8em;
+}
