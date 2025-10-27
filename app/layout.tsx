@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./navbar"
+import Navbar from "./navbar";
 
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 
 export const metadata: Metadata = {
@@ -34,14 +34,11 @@ children
 function Footer() {
   const currentYear = new Date().getFullYear();
   return(
-    <footer>
-      <section>
+    <section className="footer inset">
         <p>
-					this is public domain work<br />
-					coded in collaboration with
-					<a href="https://github.com/ItsPi3141/">Pi</a> and <a href="https://twidilers.com/">Oliver</a><br />
+					this is public domain work last updated in {currentYear}<br />
+          created by wall03 and next.js 
 				</p>
-      </section>
-    </footer>
+    </section>
   );
 }

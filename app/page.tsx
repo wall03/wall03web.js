@@ -1,6 +1,6 @@
 import Link from "next/link";
 import cardData from "./card-data.json"
-import "./cards.css"
+import {Cards} from "./cards"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -8,30 +8,14 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 export default function Home() {
   return (
     <>
-    <section className="header-container">
-      <header>hello. <br />I'm wall03</header>
-      <i className="fa-solid fa-hand-wave"></i>
+    <section className="header-container inset">
+      <header>hello. <br />I'm wall03.</header>
     </section>
 
     <section className="small-card-container">
-      <Cards />
+      <Cards cardData={cardData} />
      
     </section>
-    </>
-  );
-}
-
-function Cards() {
-  return (
-    <>
-      {cardData.map((card, index) => (
-        <Link key={index} href={card.link}>
-          <button className="small-card">
-            <h1>{card.title}</h1>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-        </Link>
-      ))}
     </>
   );
 }

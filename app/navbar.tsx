@@ -14,18 +14,23 @@ export default function Navbar() {
   ]
 
   return (
-    <nav>
-      {navItems.map((item) => (
-        <Link 
-          key={item.href}
-          href={item.href}
-          className={pathname === item.href ? 'disabled' : ''}
-        >
-          <button disabled={pathname === item.href}>
-            {item.label}
-          </button>
-        </Link>
-      ))}
-    </nav>
+    <div className="navbar-container">
+      <nav>
+        {navItems.map((item) => (
+          <Link 
+            key={item.href}
+            href={item.href}
+            className={pathname === item.href ? 'disabled' : ''}
+          >
+            <button disabled={pathname === item.href}>
+              {item.label}
+            </button>
+          </Link>
+        ))}
+      </nav>
+      <div className="announcement-bar inset">
+        <p style={{ margin: 0 }}><strong>announcements: </strong>I rewrote this in next.js lol <Link href="/blog">more</Link></p>
+      </div>
+    </div>
   )
 }
