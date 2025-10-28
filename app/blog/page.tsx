@@ -1,4 +1,4 @@
-import {blogCards} from "./blog-cards"
+import { BlogCards } from "./blog-cards"
 
 export default function Blog() {
   return (
@@ -7,7 +7,7 @@ export default function Blog() {
       <header>my stream <br />of conciousness.</header>
     </section>
     <section className="small-card-container">
-      <blogCards />
+      <BlogCards />
     </section>
 
     </>

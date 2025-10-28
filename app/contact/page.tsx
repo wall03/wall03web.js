@@ -1,4 +1,5 @@
 import { ContactCards } from "./contact-cards"
+import "./contact-cards.css"
 
 export default function Contact() {
   return (
@@ -7,7 +8,9 @@ export default function Contact() {
       <header>my contact <br /> information.</header>
     </section>
 
-    <sectio
+    <section className="small-card-container">
+      <ContactCards />
+    </section>
     </>
   );
 }

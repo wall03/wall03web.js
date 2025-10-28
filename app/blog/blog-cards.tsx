@@ -3,7 +3,7 @@ import blogCardData from "./blog-data.json"
 import '../cards.css'
 
 
-export function blogCards() {
+export function BlogCards() {
     let cardOutput = 'Nothing to see yet!';
 
     blogCardData.map((card, index) => (
