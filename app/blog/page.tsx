@@ -6,7 +6,7 @@ export default function Blog() {
     <section className="header-container inset">
       <header>my stream <br />of conciousness.</header>
     </section>
-    <section className="small-card-container">
+    <section className="blog-card-container">
       <BlogCards />
     </section>
 

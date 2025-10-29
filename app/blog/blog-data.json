@@ -1,17 +1,20 @@
 [
-    {
-        "slug": "my-first-post",
-        "date": "2024-07-01",
-        "title": "My First Post",
-        "content": "This is the content of my first post.",
-        "cover":"",
-        "description":"first post"
-    },
-    {
-        "slug": "another-day-another-post",
-        "date": "2024-07-02",
-        "title": "Another Day, Another Post",
-        "content": "Sharing my thoughts on this fine day.",
-        "description":"first post"
-    }
+  {
+    "link":"blog/my-first-post",
+    "slug": "my-first-post",
+    "date": "2024-07-01",
+    "title": "My First Post",
+    "content": "This is the content of my first post.",
+    "cover": "/blog1.jpg",
+    "description": "first post"
+  },
+  {
+    "link":"blog/another-day-another-post",
+    "slug": "another-day-another-post",
+    "date": "2024-07-02",
+    "title": "Another Day, Another Post",
+    "content": "Sharing my thoughts on this fine day.",
+    "cover": "/blog2.png",
+    "description": "first post"
+  }
 ]

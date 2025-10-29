@@ -19,6 +19,7 @@ export default function Page({
             <header>{post.title}</header>
         </section>
         <section className="blog-post-container inset">
+            <p className="blog-date">Posted on {post.date}</p>
             <p>{post.content}</p>
         </section>
     </>

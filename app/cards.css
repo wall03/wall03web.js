@@ -16,7 +16,6 @@
     position: relative;
     width: 587.5px;
     height:217.6px;
-    box-shadow: inset 0 8px 19px 0px #00000036;
     cursor:pointer;
     text-align:left;
     transition:all 0.2s;
@@ -31,8 +30,9 @@
     text-overflow: ellipsis;
 }
 
-.small-card inset:hover {
-    box-shadow: none;
+.small-card:hover {
+    transform: translateY(-2px);
+	box-shadow: 0 8px 19px 0px #00000036;
 }
 
 .header-container {

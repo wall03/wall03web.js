@@ -10,6 +10,11 @@
     height:42px;
     position:relative;
     color:var(--foreground);
+    transition:all 0.2s;
+}
+.contact-card:hover {
+  transform: translateY(-2px);
+	box-shadow: 0 8px 19px 0px #00000036;
 }
 
 span {
