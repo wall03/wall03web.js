@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./navbar";
+import getFullYear from "get-full-year";
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -31,12 +32,12 @@ children
   );
 }
 
-function Footer() {
-  const currentYear = new Date().getFullYear();
+async function Footer() {
+  const data = await getFullYear(true);
   return(
     <section className="footer inset">
         <p>
-					this is public domain work last updated in {currentYear}<br />
+					this is public domain work last updated in {data.year}<br />
           created by wall03 and next.js 
 				</p>
     </section>
