@@ -27,13 +27,12 @@ export function ContactCards() {
 	<div className="break"></div>
 	<h2>Socials</h2>
 		{getCard("reddit","fa-brands fa-reddit","https://www.reddit.com/user/not_wall03")}
-		{getCard("mastodon","fa-brands fa-mastodon","mastodon")}
+		{getCard("mastodon","fa-brands fa-mastodon","https://urbanists.social/@wall03")}
 		{getCard("Twitter","fa-brands fa-twitter","https://twitter.com/not_wall03")}
 	<div className="break"></div>
 	<h2>Gaming</h2>
 		{getCard("Steam","fa-brands fa-steam","https://steamcommunity.com/id/wall03/")}
 		{getCard("WOTC","fa-brands fa-wizards-of-the-coast","https://steamcommunity.com/id/wall03/")}
-
 	 <div className="break"></div>
 	<h2>Forums</h2>
 		{getCard("Ars","fa-solid fa-gears","https://arstechnica.com/civis/members/wall03.841621/")}
