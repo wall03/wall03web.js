@@ -1,11 +1,11 @@
 import blogData from "../blog-data.json"
 
-export default function Page({
+export default async function Page({
   params,
 }: {
-  params: { slug: string }
+  params: { slug: string } | Promise<{ slug: string }>
 }) {
-  const { slug } = params
+  const { slug } = await params
   const post = Array.isArray(blogData)
     ? blogData.find((p: any) => p.slug === slug)
     : (blogData as any)[slug]

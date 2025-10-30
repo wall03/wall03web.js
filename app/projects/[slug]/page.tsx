@@ -1,11 +1,11 @@
 import projectData from "../project-data.json"
 
-export default function Page({
+export default async function Page({
   params,
 }: {
-  params: { slug: string }
+  params: { slug: string } | Promise<{ slug: string }>
 }) {
-  const { slug } = params
+  const { slug } = await params
   const post = Array.isArray(projectData)
     ? projectData.find((p: any) => p.slug === slug)
     : (projectData as any)[slug]
