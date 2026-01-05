@@ -3,10 +3,15 @@ import "./globals.css";
 import Navbar from "./navbar";
 import getFullYear from "get-full-year";
 
+import { Inter } from "next/font/google"
+
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
+const inter = Inter({
+  subsets:['latin'],
+})
 
 export const metadata: Metadata = {
   title: "wall03 website",
@@ -19,7 +24,7 @@ children
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body>
           <div className="main-container">
             <Navbar />

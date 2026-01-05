@@ -1,20 +1,10 @@
 [
   {
-    "link":"blog/my-first-post",
-    "slug": "my-first-post",
-    "date": "2024-07-01",
-    "title": "My First Post",
-    "content": "This is the content of my first post.",
+    "link":"blog/js-journey",
+    "slug": "js-journey",
+    "date": "2026-01-04",
+    "title": "My JS Journey",
     "cover": "/blog1.jpg",
-    "description": "first post"
-  },
-  {
-    "link":"blog/another-day-another-post",
-    "slug": "another-day-another-post",
-    "date": "2024-07-02",
-    "title": "Another Day, Another Post",
-    "content": "Sharing my thoughts on this fine day.",
-    "cover": "/blog2.png",
-    "description": "first post"
+    "description": "How I learned NextJS and built this website"
   }
 ]
