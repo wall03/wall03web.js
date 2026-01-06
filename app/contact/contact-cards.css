@@ -7,7 +7,7 @@
     display:flex;
     flex-direction:row;
     gap:30px;
-    height:42px;
+    height:auto;
     position:relative;
     color:var(--foreground);
     transition:all 0.2s;
@@ -35,4 +35,46 @@ h2 {
   flex-basis: 100%;
   height: 0;
   width:100%;
+}
+
+@media (max-width: 1240px) {
+  .contact-card {
+    width:calc(25vw - 91px);
+    gap:20px; 
+    font-size:21px;
+  }
+  .small-card-container {
+    gap:20px;
+  }
+}
+
+@media (max-width:1110px) {
+  .contact-card {
+    width:calc(33vw - 91px);
+    font-size:25px;
+  }
+}
+
+@media (max-width:850px) {
+  .contact-card {
+    width:calc(50vw - 95px);
+  }
+}
+
+@media (max-width:540px) {
+  svg {
+    font-size:40px;
+    margin-top:3px;
+  }
+  .contact-card {
+    padding:35px 25px;
+    width:calc(50vw - 75px);
+    font-size:22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-card {
+    width:calc(100vw - 20px);
+  }
 }

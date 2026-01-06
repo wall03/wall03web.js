@@ -29,7 +29,7 @@ export default function Navbar() {
         ))}
       </nav>
       <div className="announcement-bar inset">
-        <p style={{ margin: 0 }}><strong>announcements: </strong>I rewrote this in next.js lol <Link href="/blog">more</Link></p>
+        <p style={{ margin: 0 }}><strong>announcements: </strong>I rewrote this in next.js lol <Link href="/blog/js-journey">more</Link></p>
       </div>
     </div>
   )
