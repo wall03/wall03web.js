@@ -53,3 +53,9 @@
     border-radius:8px;
     border:2px solid var(--bg-accent2)
 }
+
+@media (max-width:630px) {
+    .blog-card {
+        width:calc(100vw - 20px);
+    }
+}

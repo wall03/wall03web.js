@@ -168,13 +168,21 @@ section {
     line-height: 60px;
     margin:40px 0;
   }
-  
-  nav {
-    flex-wrap:wrap;
-    height:auto;
-  }
-  
+
   .announcement-bar {
     display:none;
+  }
+}
+@media (max-width:499px) {
+  nav {
+    width:100%;
+    flex-wrap:wrap;
+    height:113px;
+  }
+  .navbar-container {
+    height:113px;
+  }
+  .main-container {
+    margin-top: 159px;
   }
 }

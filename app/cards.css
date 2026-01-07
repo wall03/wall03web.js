@@ -83,3 +83,26 @@
         right:20px;
     }
 }
+@media (max-width:727px) {
+    .small-card h2 {
+        font-size:45px;
+    }
+    .small-card {
+        padding:25px;
+    }
+}
+
+@media (max-width:586px) {
+    .small-card {
+        width:calc(100vw - 20px);
+        padding: 40px;
+    }
+    .small-card h2 {
+        font-size:50px;
+    }
+}
+@media (max-width:486px) {
+  .header-container {
+    padding:40px;
+  }
+}
