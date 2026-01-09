@@ -1,6 +1,7 @@
 import blogData from "../blog-data.json"
 import fs from "fs/promises"
 import path from "path"
+import '../blog-post.css'
 
 export default async function Page({
   params,

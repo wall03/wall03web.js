@@ -115,13 +115,13 @@ nav button:hover {
   border-radius:20px;
 }
 
-nav button:disabled{
+.disabled{
   background:var(--foreground);
   color: #000;
   border-radius:20px;
 }
 
-nav button:disabled:hover{
+.disabled:hover{
   background:var(--foreground);
 }
 

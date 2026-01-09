@@ -27,7 +27,7 @@ export default function Navbar() {
               href={item.href}
               className={isActive ? 'disabled' : ''}
             >
-              <button disabled={isActive}>
+              <button className={isActive ? 'disabled' : ''}>
                 {item.label}
               </button>
             </Link>

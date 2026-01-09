@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./navbar";
-import getFullYear from "get-full-year";
 
 import { Inter } from "next/font/google"
 
@@ -38,12 +37,12 @@ children
 }
 
 async function Footer() {
-  const data = await getFullYear(true);
+  const data = new Date().getFullYear();
   return(
     <section className="footer inset">
         <p>
-					this is public domain work last updated in {data.year}<br />
-          created by wall03 and next.js 
+					this is public domain work last updated in {data}<br />
+          created by wall03 in next.js 
 				</p>
     </section>
   );

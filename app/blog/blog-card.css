@@ -19,6 +19,7 @@
     text-align:left;
     transition:all 0.2s;
     height:fit-content;
+    text-overflow:ellipsis;
 }
 
 .blog-card h2 {

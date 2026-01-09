@@ -1,5 +1,13 @@
 [
   {
+    "link":"blog/16ARX8-review",
+    "slug": "16ARX8-review",
+    "date": "2026-01-08",
+    "title": "Laptop Review/Rant",
+    "cover": "/legion1.png",
+    "description": "My experience on the Legion Pro 5 used for schoolwork."
+  },
+  {
     "link":"blog/js-journey",
     "slug": "js-journey",
     "date": "2026-01-04",
