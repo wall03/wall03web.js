@@ -1,6 +1,8 @@
 import projectData from "../project-data.json"
 import fs from "fs/promises"
 import path from "path"
+import '../project-post.css'
+import Image from 'next/image'
 
 export default async function Page({
   params,

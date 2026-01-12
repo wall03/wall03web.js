@@ -34,7 +34,7 @@
 }
 
 .small-card:hover {
-    transition:all 0.2s;
+    transition:all 0.4s;
 
     transform: translateY(-2px);
 	box-shadow: 0 8px 19px 0px #00000036;
