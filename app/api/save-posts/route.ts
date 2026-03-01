@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { writeFile, unlink } from "fs/promises";
+import { writeFile, unlink, readFile } from "fs/promises";
 import path from "path";
 import { existsSync } from "fs";
 
@@ -20,8 +20,8 @@ export async function POST(request: Request) {
     const existingBlogDataPath = path.join(process.cwd(), "app", "blog", "blog-data.json");
     let existingSlugs: string[] = [];
     if (existsSync(existingBlogDataPath)) {
-      const existingData = await import(existingBlogDataPath);
-      existingSlugs = existingData.default.map((post: any) => post.slug);
+      const existingData = JSON.parse(await readFile(existingBlogDataPath, "utf-8"));
+      existingSlugs = existingData.map((post: any) => post.slug);
     }
 
     const newSlugs = posts.map((post: any) => post.slug);
