@@ -29,6 +29,7 @@ body {
   font-size:1em;
   padding:0 20px;
   box-sizing:border-box;
+  scrollbar-color: var(--foreground) var(--background);
 }
 
 header {
@@ -145,6 +146,10 @@ section {
 
 .inset {
   box-shadow: inset 0 8px 19px 0px #00000036;
+}
+
+.section-header {
+  font-size:2.3em;
 }
 
 @media (max-width:960px) {

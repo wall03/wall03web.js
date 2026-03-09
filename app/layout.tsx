@@ -2,48 +2,48 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./navbar";
 
-import { Inter } from "next/font/google"
+import { Inter } from "next/font/google";
 
-import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
 const inter = Inter({
-  subsets:['latin'],
-})
+	subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "wall03 website",
-  description: "blog, portfolio, and biography of wall03",
+	title: "wall03 website",
+	description: "blog, portfolio, and biography of wall03",
 };
 
 export default function RootLayout({
-children
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className={inter.className}>
-      <body>
-          <div className="main-container">
-            <Navbar />
-            {children}
-            <Footer />
-
-          </div>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" className={inter.className}>
+			<body>
+				<div className="main-container">
+					<Navbar />
+					{children}
+					<Footer />
+				</div>
+			</body>
+		</html>
+	);
 }
 
 async function Footer() {
-  const data = new Date().getFullYear();
-  return(
-    <section className="footer inset">
-        <p>
-					this is public domain work last updated in {data}<br />
-          created by wall03 in next.js 
-				</p>
-    </section>
-  );
+	const data = new Date().getFullYear();
+	return (
+		<section className="footer inset">
+			<p>
+				this is public domain work last updated in {data}
+				<br />
+				created by wall03 in next.js
+			</p>
+		</section>
+	);
 }

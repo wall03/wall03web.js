@@ -13,8 +13,8 @@ export function BlogCards() {
                         className="blog-img"
                         src={card.cover && card.cover.startsWith('/') ? card.cover : `/${card.cover}`}
                         alt={card.description || card.title}
-                        width={600}
-                        height={200}
+                        width={507}
+                        height={380}
                     />
                     <h2>{card.title}</h2>
                     <p>{card.description}</p>
