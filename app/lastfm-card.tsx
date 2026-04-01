@@ -26,13 +26,13 @@ export default async function TopTracks() {
 	} catch {
 		return <div className="lastFM-card">Could not reach Last.fm.</div>;
 	}
-	const raw: {
+	const raw = (data.toptracks?.track ?? []) as {
 		name: string;
 		artist: { name: string };
 		url: string;
 		playcount: string;
 		"@attr": { rank: string };
-	}[] = data.toptracks?.track ?? [];
+	}[];
 
 	const infos = await Promise.all(
 		raw.map(async (track) => {
