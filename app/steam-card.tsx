@@ -27,7 +27,7 @@ export default async function SteamUser() {
     }
 
     const userdata = playerData.response.players[0];
-    const games: { appid: number; name: string; img_icon_url: string; playtime_2weeks: number; }[] = gamesData.response.games ?? [];
+    const games = (gamesData.response.games ?? []) as { appid: number; name: string; img_icon_url: string; playtime_2weeks: number; }[];
 
     return (
         <>
